@@ -689,6 +689,47 @@
         transform: scale(1.05);
       }
 
+      /* Freelancer Tag Styles - Professional Look */
+      .freelancer-tag {
+        display: inline-flex;
+        align-items: center;
+        background: linear-gradient(135deg, #a855f7, #9333ea);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-left: 20px;
+        box-shadow: 0 4px 15px rgba(168, 85, 247, 0.5);
+        transition: background 0.3s, transform 0.3s;
+        font-family: 'Poppins', sans-serif;
+        vertical-align: middle;
+        margin-bottom: 0;
+      }
+
+      .freelancer-tag:hover {
+        color: white;
+        /* background: linear-gradient(135deg, #9333ea, #7e22ce); */
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .freelancer-tag {
+          margin-left: 10px;
+          padding: 6px 12px;
+          font-size: 0.9rem;
+          display: inline-block;
+          margin-top: 5px;
+        }
+        
+        .hero h1 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+        }
+      }
+
       .tag img {
         width: 32px;
         height: 32px;
@@ -1664,8 +1705,9 @@ em {
       </div>
       
       <div class="heno-left">
-        <h1>
-          Hi, I'm <span>Avinash</span>
+        <h1 style="white-space: nowrap; align-items: center; gap: 8px;">
+          Hi, I'm <span style="color: orange;">Avinash</span>
+          <span class="freelancer-tag">Freelancer</span>
         </h1>
         <h2>
           I am a <span id="typing" class="highlight"></span>
@@ -1869,8 +1911,43 @@ I love solving problems, learning new technologies, and taking on new challenges
               <h2>My Projects</h2>
               <p>Here are some of my recent projects that showcase my skills and expertise.</p>
           </div>
+
+          
           
           <div class="projects-grid">
+
+                          <!-- Project 3 -->
+<div class="project-card">
+  <div class="client-stamp">Client-Based</div>
+  <div class="project-image">
+      <img src="assets/tams.png" alt="TAMS Webportal">
+  </div>
+  <div class="project-content">
+      <h3>TAMS Game Management Portal</h3>
+      <p>
+          A web portal built for the <strong style="color: red;">TAMS event at PES University</strong>, designed to handle 
+          registration, team management, and event coordination for over <strong style="color: red;">1000 users</strong>. 
+          The system supports both <strong style="color: red;">user</strong> and <strong style="color: red;">admin</strong> roles, ensuring smooth 
+          management of large-scale event activities.
+      </p>
+
+      <div class="project-tech">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">Vercel</span>
+      </div>
+
+      <div class="project-links">
+          <a href="https://tams-qame.vercel.app/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+          <!-- Uncomment if you want to add GitHub later -->
+          <!-- <a href="YOUR_GITHUB_LINK" class="project-link"><i class="fab fa-github"></i> Source Code</a> -->
+      </div>
+  </div>
+</div>
               <!-- Project 1 -->
               <div class="project-card">
                   <div class="client-stamp">Client-Based</div>
@@ -1891,7 +1968,7 @@ I love solving problems, learning new technologies, and taking on new challenges
                       
                       <div class="project-links">
                           <a href="" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                          <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                          <!-- <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a> -->
                       </div>
                   </div>
               </div>
@@ -1917,33 +1994,13 @@ I love solving problems, learning new technologies, and taking on new challenges
                       
                       <div class="project-links">
                           <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                          <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                          <!-- <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a> -->
                       </div>
                   </div>
               </div>
               
-              <!-- Project 3 -->
-              <div class="project-card">
-                  <div class="project-image">
-                      <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI Service">
-                  </div>
-                  <div class="project-content">
-                      <h3>AI-Powered Customer Support</h3>
-                      <p>An intelligent chatbot solution that handles customer inquiries using natural language processing and machine learning.</p>
-                      
-                      <div class="project-tech">
-                          <span class="tech-tag">Python</span>
-                          <span class="tech-tag">TensorFlow</span>
-                          <span class="tech-tag">NLTK</span>
-                          <span class="tech-tag">Flask</span>
-                      </div>
-                      
-                      <div class="project-links">
-                          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                          <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                      </div>
-                  </div>
-              </div>
+
+
           </div>
       </div>
   </section>
